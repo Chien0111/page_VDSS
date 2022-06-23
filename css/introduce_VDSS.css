@@ -1,0 +1,16 @@
+.img-introduce img {
+  width: 100%;
+}
+.header {
+  background: white;
+}
+.header-right button {
+  color: black !important;
+}
+.carousel-text{
+    position: relative;
+    top: 450px;
+    left: 50px;
+    color: white;
+    font-size: 45px;
+}
