@@ -14,6 +14,19 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div>
@@ -22,17 +35,37 @@
           <img src="../logo/logo vdss_final.png" alt="" />
         </div>
         <div class="header-right flex">
-          <button class="noneboder"><h3>GIẢI PHÁP</h3></button>
-          <button class="noneboder"><h3>GIỚI THIỆU</h3></button>
-          <button class="noneboder"><h3>TIN TỨC</h3></button>
-          <button class="noneboder"><h3>TUYỂN DỤNG</h3></button>
-          <button class="noneboder"><h3>LIÊN HỆ</h3></button>
-          <button class="language">
-            <img
-              src="https://media.loveitopcdn.com/3807/la-co-viet-nam-vector-1.png"
-              alt=""
-            />
-          </button>
+          <div class="button-page">
+            <button class="noneboder"><h3>GIẢI PHÁP</h3></button>
+            <button class="noneboder"><h3>GIỚI THIỆU</h3></button>
+            <button class="noneboder"><h3>TIN TỨC</h3></button>
+            <button class="noneboder"><h3>TUYỂN DỤNG</h3></button>
+            <button class="noneboder"><h3>LIÊN HỆ</h3></button>
+            <button class="language">
+              <img
+                src="https://media.loveitopcdn.com/3807/la-co-viet-nam-vector-1.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <button
+              class="navbar-toggler"
+              type="button"
+              id="navbar-dropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars font-size-50"></i>
+              </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><button class="noneboder"><h3>GIẢI PHÁP</h3></button></a></li>
+              <li><a class="dropdown-item" href="#"><button class="noneboder"><h3>GIỚI THIỆU</h3></button></a></li>
+              <li><a class="dropdown-item" href="#"><button class="noneboder"><h3>TIN TỨC</h3></button></a></li>
+              <li><a class="dropdown-item" href="#"><button class="noneboder"><h3>TUYỂN DỤNG</h3></button></a></li>
+              <li><a class="dropdown-item" href="#"><button class="noneboder"><h3>LIÊN HỆ</h3></button></a></li>
+            </ul>
         </div>
       </div>
       <div class="container" id="slide">
@@ -220,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div id="partner">
+        <div id="partner" style="background: #f2f2f2; ">
           <h3 class="bottom borders" id="header_solution" style="margin-left: 80px;">Đối tác tin cậy</h3>
           <div class="flex " id="list-img-partner" style="margin-left: 60px;margin-right: 60px;">
             <div class="partner-img">
@@ -269,7 +302,7 @@
           <h3 class="bottom borders" id="header_solution"style="margin-left: 80px;">Tin tức sự kiện</h3>
           <div class=" hover01" style="margin-left: 60px;margin-right: 60px;">    
             <div class="row">
-              <div class="col-md-3 col-xs-12 col-sm-12 sq">
+              <div class="col sq">
                 <figure class="hover-figure">
                   <img
                     src="../img/tinTuc1.png"
@@ -285,7 +318,7 @@
                 </figcaption>
                 
               </div>
-              <div class="col-md-3 col-xs-12 col-sm-12 sq">
+              <div class="col sq">
                 <figure class="hover-figure">
                   <img src="../img/tinTuc2.png" alt="" />
                 </figure>
@@ -298,7 +331,7 @@
                   </div>
                 </figcaption>
               </div>
-              <div class="col-md-3 col-xs-12 col-sm-12   sq">
+              <div class="col sq">
                 <figure class="hover-figure">
                   <img
                   src="../img/tinTuc3.png"

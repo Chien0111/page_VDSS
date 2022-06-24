@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media all and (max-width: 1090px) {
+  .button-page {
+    display: none !important;
+  }
+  .navbar-toggler{
+    display: block;
+  }
+  #navbar-dropdown{
+    display: block !important;
+  }
+}
 .flex {
   display: flex;
 }
@@ -15,6 +26,22 @@
   justify-content: space-between;
   color: white;
   z-index: 1;
+}
+.navbar{
+  color: white;
+  width: 100%;
+}
+.navbar-toggler{
+  display: none;
+  position: relative;
+  top: -20px;
+}
+.dropdown-menu{
+  width: 100%;
+  color: black !important;
+}
+.dropdown-menu button{
+  color: black !important;
 }
 .body {
   margin-top: 10px;
